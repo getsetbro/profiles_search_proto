@@ -20,15 +20,15 @@
     </div>
     <section class="section">
         <nav>
-          <a href="#/searchform" class="btn tabs">Search</a>
-          <a href="#/results" class="btn tabs">Results</a>
-          <a href="#/call-list" class="btn tabs">Call List</a>
+          <a ui-sref="searchform" class="btn tabs" ui-sref-active="active">Search</a>
+          <a ui-sref="results" class="btn tabs" ui-sref-active="active">Results</a>
+          <a ui-sref="call-list" class="btn tabs" ui-sref-active="active">Call List</a>
         </nav>
-        <article ng-view></article>
+        <article ui-view></article>
     </section>
     <script src="//code.jquery.com/jquery-latest.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script src="javascripts/angular-ui-router.0.2.10.min.js"></script>
     <script src="javascripts/main.js"></script>
     <script src="controllers/searchform.js"></script>
     <script src="controllers/results.js"></script>
