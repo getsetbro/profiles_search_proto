@@ -1,49 +1,37 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
+<html lang="en">
+<head>
     <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Profiles search proto : " />
+    <title>Profile</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
+    <link rel="stylesheet" href="stylesheets/bootstrap202.css" />
+    <link rel="stylesheet" href="stylesheets/stylesheet.css" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+</head>
 
-    <title>Profiles search proto</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/getsetbro/profiles_search_proto">View on GitHub</a>
-
-          <h1 id="project_title">Profiles search proto</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/getsetbro/profiles_search_proto/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/getsetbro/profiles_search_proto/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<body ng-app="app">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner clearfix">
+            <ul class="nav pull-right">
+                <li><a><i class="fa fa-user"></i> User McGoo</a></li>
+            </ul>
+            <h1 class="brand">Profile</h1>
+        </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>psp</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Profiles search proto maintained by <a href="https://github.com/getsetbro">getsetbro</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+    <section class="section">
+        <nav>
+          <a href="#/searchform" class="btn tabs">Search</a>
+          <a href="#/results" class="btn tabs">Results</a>
+          <a href="#/call-list" class="btn tabs">Call List</a>
+        </nav>
+        <article ng-view></article>
+    </section>
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="controllers/searchform.js"></script>
+    <script src="controllers/results.js"></script>
+    <script src="controllers/call-list.js"></script>
+</body>
 </html>
