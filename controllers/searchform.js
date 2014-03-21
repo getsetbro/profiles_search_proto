@@ -3,10 +3,10 @@ app.controller('searchform', function($scope) {
 		$scope.prf = {};
 		$scope.wrap = $('article');
 		$scope.prf.Geo = {};
-		$scope.prf.Geo.Type = "Nationwide";
+		$scope.prf.Geo.Type = "International";
 		$scope.prf.Geo.Country = "United States";
 		$scope.StatesList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montan", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"];
-		$scope.prf.Geo.States = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montan", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"];
+		$scope.prf.Geo.States = [];
 		$scope.prf.Markets = "none";
 		$scope.prf.Lender = {};
 		$scope.prf.Lender.Structured_Finance = false;
@@ -26,14 +26,7 @@ app.controller('searchform', function($scope) {
 				"Land": ["Residential", "Multi Family", "Office", "Industrial", "Retail", "Resort", "Timber", "Agricultural"]
 		};
 		$scope.prf.Property_type = {
-				"Office": ["Multi Tenant", "Single Tenant", "Credit", "Data Center", "Non-Credit", "Medical (MOB)", "GSA", "Owner Occupied"],
-				"Retail": ["Multi Tenant", "Single Tenant", "Credit", "Non", "Malls", "Grocery Anchored", "Unanchored", "Power Center/Big Box", "Specialty", "Mixed Use", "Owner occupied"],
-				"Industrial": ["Manufacturing – Heavy", "Manufacturing - Light", "Distribution/Warehouse", "Owner Occupied", "Flex"],
-				"Multi-Family": ["Urban/Core", "Suburban", "Garden", "Mid Rise", "High Rise", "Condominium", "Fractured Condominium", "Mixed Use", "Student", "Manufactured Housing", "Military"],
-				"Senior-Living": ["Independent", "Assisted", "Memory Care"],
-				"Medical": ["Hospital", "Surgical center", "Medical (MOB)"],
-				"Other": ["Environmentally challenged", "Assets/redevelopment", "Lot Development", "Data Center", "Marina", "Golf Course/Golf Course Resort", "Self Storage"],
-				"Land": ["Residential", "Multi Family", "Office", "Industrial", "Retail", "Resort", "Timber", "Agricultural"]
+
 		};
 		$scope.Property_type_Active = "Office";
 
