@@ -9,15 +9,13 @@ body, body * {
   box-sizing: border-box;
 }
 /*bootstrap changes*/
-input[type="text"]{
+input[type="text"], input[type="number"]{
   box-sizing: content-box;
 }
 label {
 margin-bottom: 0
 }
-input {
-height: 9px;
-}
+
 .input-append{
   white-space: nowrap;
 }
@@ -127,8 +125,6 @@ select{
   width:90%;
 }
 
-
-
 .inlineinput{
   width:auto;
   max-width: 27%
@@ -136,6 +132,7 @@ select{
 
 .well {
 padding: 10px;
+margin-top: 8px;
 margin-bottom: 0
 }
 
@@ -150,21 +147,10 @@ aside pre{
   overflow: auto
 }
 
-.geo-dd.us{
-  width:210px;
-  max-width: 100%;
-  height: 80px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  overflow: auto;
-  padding: 4px;
-  margin-bottom: 10px;
-  display: inline-block;
-  vertical-align: top
-}
 .geo-dd.us label, .pt label{
 margin-top: 1px
 }
+
 .geo-dd.us .selected, .pt .selected{
   background-color: #eee;
 }
@@ -180,15 +166,3 @@ margin-top: 1px
 padding-top: 0;
 }
 
-.pt{
-  width: 210px;
-max-width: 100%;
-height: 142px;
-border: 1px solid #ccc;
-border-radius: 3px;
-overflow: auto;
-padding: 4px;
-margin-bottom: 10px;
-display: inline-block;
-vertical-align: top;
-}
