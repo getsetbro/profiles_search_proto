@@ -62,7 +62,7 @@ article{
   display:table-cell;
   vertical-align:top;
   background-color:#C6D0D5;
-  background-image: url('../img/gray_jean.png');
+  background-image: url('../img/noise.png');
   padding-bottom:10px;
 /*  background-image:repeating-linear-gradient(145deg, transparent 0, transparent 40px, rgba(255,255,255,.15) 40px, rgba(255,255,255,0.15) 80px);*/
 }
