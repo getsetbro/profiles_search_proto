@@ -16,14 +16,14 @@ app.controller('searchform', function( $scope, $location ) {
 	$scope.prf.Programs = [];
 	$scope.Programs = ["Permanent", "Bridge Interim", "Construction", "Construction Mini perm", "Rehab", "Fully Amortizing", "Mezzanine", "Participating", "Recourse Typically Required", "Non Recourse Construction", "Warm body on Carve out typically required", "Fixed Rate", "Floating Rate", "Allows 2nd Mortgage", "Prepayment Fixed Step Down", "Prepayment Yield Maintenance", "Prepayment Defeasance", "Participating Mortgage"];
 	$scope.Property_type = {
-		"Office": ["Multi Tenant", "Single Tenant", "Credit", "Data Center", "Non-Credit", "Medical (MOB)", "GSA", "Owner Occupied"],
+		"Office": ["Multi Tenant", "Single Tenant", "Credit", "Data Center", "Non-Credit", "Medical (MOB)", "GSA", "Mixed Use", "Owner Occupied"],
 		"Retail": ["Multi Tenant", "Single Tenant", "Credit", "Non", "Malls", "Grocery Anchored", "Unanchored", "Power Center/Big Box", "Specialty", "Mixed Use", "Owner occupied"],
 		"Industrial": ["Manufacturing – Heavy", "Manufacturing - Light", "Distribution/Warehouse", "Owner Occupied", "Flex"],
 		"Multi-Family": ["Urban/Core", "Suburban", "Garden", "Mid Rise", "High Rise", "Condominium", "Fractured Condominium", "Mixed Use", "Student", "Manufactured Housing", "Military"],
 		"Senior-Living": ["Independent", "Assisted", "Memory Care"],
 		"Hospitality": ["Flagged Only", "Un-flagged/Boutique", "Full Service", "Limited Service", "Extended Stay", "Resort"],
 		"Medical": ["Hospital", "Surgical center", "Medical (MOB)"],
-		"Other": ["Environmentally challenged", "Assets/redevelopment", "Lot Development", "Data Center", "Marina", "Golf Course/Golf Course Resort", "Self Storage"],
+		"Other": ["Environmentally challenged", "Assets/redevelopment", "Lot Development", "Data Center", "Marina", "Mixed Use", "Golf Course/Golf Course Resort", "Self Storage"],
 		"Land": ["Residential", "Multi Family", "Office", "Industrial", "Retail", "Resort", "Timber", "Agricultural"]
 	};
 	$scope.prf.Property_type = {
